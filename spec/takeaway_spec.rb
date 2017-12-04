@@ -2,7 +2,7 @@ require 'menu'
 
 describe Menu do
 
-subject(:menu) {described_class.new}
+subject(:menu) { described_class.new }
   it 'initialize with a list of dishes' do
     expect(subject).to eq(menu)
   end

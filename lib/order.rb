@@ -1,8 +1,7 @@
- require_relative 'menu'
+require_relative 'menu'
 
 class Order
-
-  attr_reader :basket
+attr_reader :basket
 
   def initialize
     @basket = []
@@ -14,6 +13,10 @@ class Order
     @quantity.times do
       @basket << dish
     end
+  end
+  def add_total(dish)
+    @menu.select {|dish, price| price}
+    @total += price
   end
 
 end
