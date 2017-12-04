@@ -1,10 +1,10 @@
 
-class Disheslist
+class Menu
 
   attr_reader :list
 
   def initialize
-    @list = {
+    @menu = {
       "Spaghetti" => 10,
       "Bibimbap" => 8,
       "Chocolate cake" => 4,
@@ -13,7 +13,7 @@ class Disheslist
     }
   end
   def print_menu
-    @list.each do |dish, price|
+    @menu.each do |dish, price|
       p "#{dish} : #{price} £"
     end
   end

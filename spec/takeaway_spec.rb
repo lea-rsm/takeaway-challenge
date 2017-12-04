@@ -1,10 +1,10 @@
-require 'takeaway'
+require 'menu'
 
-describe Disheslist do
+describe Menu do
 
-subject(:list) {described_class.new}
+subject(:menu) {described_class.new}
   it 'initialize with a list of dishes' do
-    expect(subject).to eq(list)
+    expect(subject).to eq(menu)
   end
 
   it 'prints the menu' do
